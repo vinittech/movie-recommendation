@@ -20,16 +20,16 @@ auto-encoder anticipates and generates a rating for those movies which the user 
 collaborative filtering.
 
 ####  - Method
-The dataset used for our work is the 1 million and 20 million ratings dataset[5]. To evaluate our results, we compare matrix factorization performance
-with auto-encoders. Spark implements alternative least squares (ALS) algorithm which is based on
-matrix factorization[6]. 
+* The dataset used for our work is the 1 million and 20 million ratings dataset[5]. To evaluate our results, 
+we compare matrix factorization performance with auto-encoders. Spark implements alternative least squares
+(ALS) algorithm which is based on matrix factorization[6]. 
 
-In collaborative filtering approach, the user’s interests are predicted based on the analysis of other
+* In collaborative filtering approach, the user’s interests are predicted based on the analysis of other
 users implicitly inferring “similarity” between them. The assumption is that two people who have
 similar ratings, have a higher likelihood of having the same opinion on an item than two randomly
 chosen people. 
 
-Auto-encoders are a form of unsupervised learning algorithm, meaning that an auto-encoder only
+* Auto-encoders are a form of unsupervised learning algorithm, meaning that an auto-encoder only
 needs unlabelled data, which means a set of input data is required rather than input-output pairs.
 For linear reconstructions,the autoencoder attempts to learn a function that minimizes the root mean
 square difference. Note that the RMSE decreases to 0 when the predicted values and the target values
@@ -39,7 +39,7 @@ an identity function, but to predict the missing ratings and not reproduce the z
 the input vectors. The network is actually trained using a loss function for regression (i.e., RMSE)
 with the aim of learning to predict missing ratings.
 
-RMSE and MAE are two performance metrics widely-used for evaluating rating predictions on
+* RMSE and MAE are two performance metrics widely-used for evaluating rating predictions on
 multimedia data. Both RMSE and MAE measure the average magnitude of error, i.e., the average
 prediction error, on incorrectly assigned ratings. The learnt model can then be used on the test
 dataset for predicting the anticipated ratings that the user would have given. If the predicted
