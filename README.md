@@ -1,5 +1,5 @@
-# movie-recommendation
-Movie Recommendation System usinf Auto-Encoders
+
+# Movie Recommendation System using Auto-Encoders
 
 This project proposes an auto-encoder approach for producing a collaborative filtering system which
 predicts movie ratings for a user based on what other similar users have rated. Using the Movie-Lens
